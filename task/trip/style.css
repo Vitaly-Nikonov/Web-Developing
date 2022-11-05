@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+*{
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    margin: 20px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+.tripcard{
+    margin: auto;
+    min-width: 341px;
+    max-width: 440px;
+    border: 0.3px solid rgba(130, 130, 130, 1);
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+.tripcard_image{
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+.tripcard_image_img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+}
+.tripcard_image_plate{
+    position: absolute;
+    top: 15%;
+    width: 30%;
+    padding: 12px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600px;
+    font-size: 12px;
+}
+.tripcard_image_plate-blue{
+    background-color: rgba(9, 156, 232, 1);
+    color: rgba(255, 255, 255, 1);
+}
+.tripcard_image_plate-purple{
+    top: 0;
+    background-color: rgba(117, 83, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 15px 0px 12px;
+}
+.tripcard_image_plate-yellow{
+  background-color: rgb(255, 221, 0);
+  color: black;
+}
+.tripcard_lasting{
+    display: flex;
+    align-items: center;
+    color: rgba(158, 158, 158, 1);
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.tripcard_lasting > img {
+    width: 16px;
+    height: 16px;
+    padding-right: 9px;
+}
+.tripcard_caption{
+    font-size: 14px;
+    font-weight: 600px;
+    line-height: 22px;
+    color: rgba(64, 64, 64, 1);
+    margin-bottom: 15px;
+}
+.tripcard_caption_action{
+    text-transform: uppercase;
+}
+.tripcard_info{
+    padding: 0 12px 20px;
+}
+.tripcard_list{
+    padding-left: 22px;
+    margin-bottom: 35px;
+}
+.tripcard_list_text{
+    list-style-image: url('./images/svg/marker.svg');
+    color: rgba(75, 75, 75, 1);
+    margin-bottom: 10px;
+}
+.tripcard_details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.tripcard_price{
+    font-size: 30px;
+}
+.tripcard_price > img{
+    height: 20px;
+}
+.tripcard_price_pier{
+    font-size: 10px;
+    line-height: 11px;
+}
+.tripcard_price_pier > img {
+    height: 7px;
+}
+.tripcard_more{
+    background: rgba(254, 215, 75, 1);
+    border: 0.5px solid rgba(203, 165, 0, 1);
+    border-radius: 20px;
+    color: rgba(64, 64, 64, 1);
+    text-decoration: none;
+    padding: 12px 41px;
+}
+
+@media screen and (min-width: 1100px) {
+    .tripcard {
+      max-width: 1070px;
+      display: flex;
+      border: 0.5px solid rgba(142, 142, 142, 1);
+      margin-bottom: 60px;
+    }
+  
+    .tripcard_image {
+      max-width: 44%;
+      margin-bottom: 0;
+    }
+  
+    .tripcard_image_img {
+      border-radius: 16px 0px 0px 16px;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  
+    .tripcard_image_plate {
+      font-size: 16px;
+    }
+  
+    .tripcard_headline {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  
+    .tripcard_caption {
+      font-size: 26px;
+      line-height: 34px;
+    }
+  
+    .tripcard_lasting {
+      font-size: 14px;
+    }
+  
+    .tripcard_info {
+      padding: 16px 15px 26px 20px;
+    }
+  
+    .tripcard_list {
+      margin-bottom: 25px;
+    }
+  
+    .tripcard_list_text {
+      color: rgba(52, 52, 52, 1);
+      font-size: 18px;
+    }
+    .tripcard__details {
+        justify-content: flex-start;
+    }
+    
+      .tripcard__price {
+        font-size: 36px;
+        margin-right: 15px;
+    }
+      
+      .tripcard__price > img {
+        height: 26px;
+    }
+    
+      .tripcard__price_pier {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+      .tripcard__price_pier > img {
+        height: 10px;
+    }
+}
